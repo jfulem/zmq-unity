@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net4.8</TargetFramework>
+        <ImplicitUsings>disable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+	<PropertyGroup>
+		<LangVersion>9.0</LangVersion>
+	</PropertyGroup>
+    
+    <PropertyGroup>
+        <RuntimeIdentifiers>win10-x64;linux-x64;osx-x64</RuntimeIdentifiers>
+        <PackageId>CSZeroMQ</PackageId>
+        <Version>0.1.1-preview1</Version>
+        <Authors>jgcodes2020</Authors>
+        
+    </PropertyGroup>
+    <ItemGroup>
+        <EmbeddedResource Include="runtimes\win10_x64\native\libzmq-v143-mt-4_3_5.dll" />
+        <EmbeddedResource Include="runtimes\linux_x64\native\libzmq.so" />
+        <EmbeddedResource Include="runtimes\osx_x64\native\libzmq.dylib" />
+    </ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="NativeLibraryManager" Version="1.0.23" />
+      <PackageReference Include="Serilog" Version="4.0.2-dev-02220" />
+      <PackageReference Include="Serilog.Extensions.Logging" Version="8.0.1-dev-10398" />
+      <PackageReference Include="Serilog.Sinks.Console" Version="6.0.0" />
+    </ItemGroup>
+</Project>
