@@ -1,7 +1,7 @@
 {
   "name": "zmq-unity",
   "version": "1.0.0",
-  "displayName": "ZMQUnity",
+  "displayName": "CSZeroMQ",
   "description": "Csharp Wrapper around C libzmq",
   "unity": "2022.3",
   "author": {
