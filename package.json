@@ -1,5 +1,5 @@
 {
-  "name": "zmq-unity",
+  "name": "com.btlnet.zeromq",
   "version": "1.0.0",
   "displayName": "CSZeroMQ",
   "description": "Csharp Wrapper around C libzmq",
